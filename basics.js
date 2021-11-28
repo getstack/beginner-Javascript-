@@ -42,7 +42,7 @@ console.log (person);
 
 let selectedColors = ['red', 'green'];
 
-selectedColors.reverse = [1];
+selectedColors[2] = [1];
 
 console.log (selectedColors);
 
