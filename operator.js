@@ -46,6 +46,34 @@ let grade = marks > 100  ? 'A': 'B';
 
 console.log (grade)
 
+// Logocal operators 
+
+let highIncom  = false ;
+let goodCreditScore = false ;
+//let eligibleForLoan = highIncom && goodCreditScore ;
+let eligibleForLoan = highIncom || goodCreditScore ;// Both are true
+
+console.log ("eligible", eligibleForLoan)
+
+let applicationRefused = !eligibleForLoan ;
+
+console.log (eligibleForLoan) ;
+
+
+// if the 
+
+let userColor ;
+let defaultColor = "blue" ;
+let currentColor = userColor || defaultColor ;
+
+if (userColor == undefined ){
+console.log (currentColor);
+
+}
+
+
+
+
 
 
 
