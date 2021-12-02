@@ -71,7 +71,36 @@ console.log (currentColor);
 
 }
 
+// Precdence 
 
+//let a = 2 + 3 * 4;  // First multiplication is run then addition 
+
+//console.log (a);
+
+
+// swapping two values 
+
+ let a = "red";
+ let b = "blue";
+
+  c = a ;
+  a = b ; 
+  b = c ;
+
+
+ console.log (b , a);
+
+ // swapping two values without third variable 
+
+ let a = 4 ;
+ let b = 8 ;
+
+ a = a + b // 8 + 4 = 12
+ b = a - b  // 12 - 8 = 4
+ a  = a - b // 12 - 4 = 8
+ 
+ 
+ console.log (a);
 
 
 
