@@ -106,16 +106,9 @@ let k = 0 ;
 while (k < 10){
 
     if (k == 5) break 
-    
     console.log (k);
-   k++
+    k++
 }
-
-
-
-
-
-
 
 
 
