@@ -1,20 +1,20 @@
 
 
-const circle = {
+// const circle = {
 
-    radius : 1 ,
-    location : {
-    x :1,
-    y:2,
-    },
-    draw : function () {
+//     radius : 1 ,
+//     location : {
+//     x :1,
+//     y:2,
+//     },
+//     draw : function () {
       
-        console.log ('Draw a circle'); 
-    }
+//         console.log ('Draw a circle'); 
+//     }
 
-}
+// }
 
-console.log (circle.location);
+// console.log (circle.location);
 
 // factory fucntions 
 
@@ -31,24 +31,38 @@ function createaCircle (radius){
 const circle1 = createaCircle (1);
 console.log (circle1);
 
-// Example 2 
-
-
-function createRobot (name) {
-return {
-    name: name,
-    talk : function (){
+// constructor functions 
+ 
+// function Circle (radius){
   
-        console.log ('My name is '+ name + 'The Robot');
+//     this.radius = radius ;
+//     this.draw = function (){
 
-    }
+//         console.log ("draw");
+
+//     }
+
+
+// }
+
+// const circle = new Circle(1);
+// console.log (circle);
+
+//Dynamic natire of objects 
+
+const circle = {
+    
+radius :1
 
 };
-}
-
-const robot1 = createRobot ('waqas');
-
-console.log (robot1);
 
 
-// constructor functions 
+circle.color = "yellow";
+circle.radius = 3;
+
+
+// Delete the property 
+
+delete circle.color;
+
+console.log (circle);
