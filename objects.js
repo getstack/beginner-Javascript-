@@ -59,18 +59,38 @@ const person = {
 // Calling a objects
   console.log (person.firstName);
   
-// Primitives are copied by their value 
+//Primitives are copied by their value 
 // let x = 10 ;
 // let y = x;
 
-//console.log (y);
+// console.log (y);
 
 
 // Objects are copied by Reference 
 
-let x = { value : 20};
-let y = x ;
+// let x = { value : 20};
+// let y = x ;
 
-console.log (y.value);
+//console.log (y.value);
 
-  
+// Enumeration 
+
+const circle = {
+
+    radius : 1,
+    draw : function (){
+
+        console.log ('draw');
+
+
+    }
+
+}
+
+for ( let key in circle){
+
+     console.log (key , circle[key]);
+}
+
+
+
