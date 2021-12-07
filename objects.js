@@ -31,38 +31,46 @@ function createaCircle (radius){
 const circle1 = createaCircle (1);
 console.log (circle1);
 
-// constructor functions 
+//constructor functions 
  
-// function Circle (radius){
-  
-//     this.radius = radius ;
-//     this.draw = function (){
+function Circle (radius){
 
-//         console.log ("draw");
+this.radius = radius;
+this.draw = function (){
 
-//     }
+console.log ("draw");
+}
 
-
-// }
-
-// const circle = new Circle(1);
-// console.log (circle);
+}
 
 //Dynamic natire of objects 
+const person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
 
-const circle = {
-    
-radius :1
+    fullName: function (){
 
-};
+        return this.firstName + " " + this.lastName;
+}
+   
+  };
+
+// Calling a objects
+  console.log (person.firstName);
+  
+// Primitives are copied by their value 
+// let x = 10 ;
+// let y = x;
+
+//console.log (y);
 
 
-circle.color = "yellow";
-circle.radius = 3;
+// Objects are copied by Reference 
 
+let x = { value : 20};
+let y = x ;
 
-// Delete the property 
+console.log (y.value);
 
-delete circle.color;
-
-console.log (circle);
+  
