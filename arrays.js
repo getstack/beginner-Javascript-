@@ -126,7 +126,7 @@ const numbers = [1,2,3];
 
 const joined = numbers.join ('-');
 
-console.log (joined);
+//console.log (joined);
 
 
 
@@ -154,7 +154,7 @@ id:3,
 
 }
 
-console.log (newstate);
+//console.log (newstate);
 
 // joing Arrays 
 
@@ -164,4 +164,28 @@ const seconds = [5,6,7];
 
 const add = [...first , ...second];
 
-console.log (add);
+//console.log (add);
+
+// Testing ana array 
+
+const testing = [1,-2,3];
+
+
+const atLeastOnePositiveNumer =testing.some (function (value){
+
+    return value >= 0 ;
+    
+    
+    });
+console.log (atLeastOnePositiveNumer);
+
+// Filterring an array 
+const filterNumber = [1,2,3,-4,-5,-6,9,10,11]
+
+const filtered = filterNumber.filter (value => value >= 0);
+
+console.log (filtered);
+
+
+// Mapping method 
+
