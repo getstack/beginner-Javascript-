@@ -187,5 +187,21 @@ const filtered = filterNumber.filter (value => value >= 0);
 console.log (filtered);
 
 
+
 // Mapping method 
+
+const maped = [2,3,4,5,6]
+const newArray = maped.map(calculate);
+
+
+function calculate (num){
+
+return num * 2 ;
+}
+
+console.log (newArray);
+
+
+
+
 
