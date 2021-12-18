@@ -1,61 +1,69 @@
 //
-const numbers = arrayFromRange  (1,20);
-console.log (numbers);
+// const numbers = arrayFromRange  (1,20);
+// console.log (numbers);
 
- function arrayFromRange (min,max){
+//  function arrayFromRange (min,max){
    
-    const output = [];
-    for (let i = min ; i <= max ; i++)
+//     const output = [];
+//     for (let i = min ; i <= max ; i++)
          
-         output.push(i)
-         return output ;
+//          output.push(i)
+//          return output ;
 
 
-}
+// }
 
-// Hositing called a variable or function before its declatattion 
+// // Hositing called a variable or function before its declatattion 
 
-//Varibale Hoisting
+// //Varibale Hoisting
 
-console.log (x);
-var x = 3;
-
-
-// // function Hoisting  
-
- (c);
-
-function c (){
-    console.log ('lets build');
-}
+// console.log (x);
+// var x = 3;
 
 
-// Block Scope 
+// // // function Hoisting  
 
-let a = 20;
+//  (c);
 
-{
+// function c (){
+//     console.log ('lets build');
+// }
 
-    var a = 10 ;
-    const b = 12;
-    var c = 'waseem'
+
+// // Block Scope 
+
+// let a = 20;
+
+// {
+
+//     var a = 10 ;
+//     const b = 12;
+//     var c = 'waseem'
 
     
     
- }
+//  }
 
-// Clousers 
+// Clousers In Javascript
 
-function outer () {
+var b = 12 ;
+
+function outer (c) {
             
-        let a = 10;
+        let a = 10; 
         function inner () {
-            console.log (a);
+            console.log (a,c,b);
 
         }
     return inner ();  
 
 }
 
-outer();
+var myValue = outer(13);
+console.log(myValue);
+
+
+
+
+
 
