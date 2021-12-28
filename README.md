@@ -11,5 +11,5 @@ We will cover the every basic of Javscript topics.<br>
 7. Hoisting 
 8. Clousers 
 9. Setimeout 
-10.
+
 
