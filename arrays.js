@@ -202,7 +202,6 @@ return num * 2 ;
 console.log (newArray);
 
 
-const 
 
 
 

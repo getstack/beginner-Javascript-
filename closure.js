@@ -1,20 +1,20 @@
 // Clousers In Javascript
 
-// var b = 12 ;
+var b = 12;
 
-// function outer (c) {
-            
-//         let a = 10; 
-//         function inner () {
-//             console.log (a,c,b);
+function outer(c) {
 
-//         }
-//     return inner ();  
+    let a = 10;
+    function inner() {
+        console.log(a, c, b);
 
-// }
+    }
+    return inner();
 
-// var myValue = outer(13);
-// console.log(myValue);
+}
+
+var myValue = outer(13);
+console.log(myValue);
 
 
 // Second Example 
@@ -35,21 +35,21 @@
 
 
 var a = 20;
-console.log (a);
+console.log(a);
 
 // Arrow functions 
-var c = (a,b) =>  a * b  ;
+var c = (a, b) => a * b;
 
-console.log (c(20,3))
+console.log(c(20, 3))
 
 
-function add(a, b ) {
+function add(a, b) {
 
-return a * b ;
+    return a * b;
 
 
 }
-console.log (add (20,90));
+console.log(add(20, 90));
 
 
 // Template  Literals 
@@ -63,5 +63,25 @@ console.log (add (20,90));
 
 // console.log (find);
 
+//promises 
+
+let complete = true;
+
+let prom = promise(function (resolve, reject) {
+
+        if (complete ) {
+
+        resolve("Yes waseem")
+
+    } else {
+
+      reject ("This person is not waseem");
+
+    }
+
+})
 
 
+console.log (prom);
+
+console.log ("Works");

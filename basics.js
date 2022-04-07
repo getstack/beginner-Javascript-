@@ -1,59 +1,64 @@
-// Declaration of varibales 
 
-// Declaring a let variable 
-let myname = 'adam';
-    myname= 'alex';
+// Clouures
+let newPerson = "waseem";
 
-//console.log(firstname);
+function a() {
 
-// Decalring a constant
+    let c = 12;
 
-const lastName = 'Mosh';
+    function b() {
+        
+        console.log (c,person);
 
-console.log (lastName);
-
-// Primitive Values
-
-let name = 'adam';// String 
-let age = 30 // Number 
-let isapproved = true; // Boolean
-let firstname = undefined ; 
-let selectedColor = null;
-
-// Reference Types 
-
-// Object 
-
-let person =  {
-
-    name :'Alien',
-    age : 30,
-
-}
- 
-
-// Dot Notation 
-person.name = 'Elan'
-person.age  = 20;
-console.log (person);
+    }
 
 
-// Arrays 
-
-let selectedColors = ['red', 'green'];
-
-selectedColors[2] = [1];
-
-console.log (selectedColors);
-
-
-// functions 
-
-function calculate (a , b) {
-
-return a * b ;
 
 }
 
-console.log(calculate (2,3));
+//console.log(a());
+
+// Spread operators 
+
+let person = {
+
+ name : 'waqas',
+ age : 30 ,
+ profession : 'designer'
+
+}
+
+let add = {
+...person,
+account: 'Saving'
+
+}
+
+console.log (add);
+
+
+let result = "How are you ,I am fine , How are you  "
+
+
+
+// Asyn await 
+
+const getData = async () => {
+var y = await  "Hello World";
+console.log (y);
+}
+
+console.log(1);
+getData();
+console.log(2);
+
+
+// 
+
+function add (a) {
+  
+    console.log (a);
+
+}
+
 
